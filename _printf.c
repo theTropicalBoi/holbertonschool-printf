@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _printf - function that produces output according to a format
+ * _printf - Print to the standard output according to a format
  * @format: list of types of arguments passed to the function
- *
+ * Return: Count 
  */
 
 int _printf(const char *format, ...)
@@ -48,4 +48,5 @@ int _printf(const char *format, ...)
 	}
 
 	va_end(arg_list);
+	return (count);
 }
