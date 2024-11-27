@@ -1,6 +1,4 @@
-#include <main.h>
-#include <stdarg.h>
-
+#include "main.h"
 /**
  * _printf - function that produces output according to a format
  * @format: list of types of arguments passed to the function
@@ -8,7 +6,6 @@
  */
 
 int _printf(const char *format, ...)
-
 {
 	va_list arg_list;
 	va_start(arg_list, format);
