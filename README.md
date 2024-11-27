@@ -26,4 +26,3 @@ Using `Ubuntu 20.04 LTS` to compile the program using `gcc`, with the option `-W
 
 ### Author:
 - [Shaan Somarchand](https://github.com/theTropicalBoi)
-- [Alexandre Mousse](https://github.com/Alex-git-pro)
