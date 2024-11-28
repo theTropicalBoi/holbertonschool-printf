@@ -6,6 +6,8 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <stdarg.h>
+#include <unistd.h>
+
 
 /* Specifier Structure */
 typedef struct specifier
@@ -16,7 +18,6 @@ typedef struct specifier
 
 
 /**
- * <unistd> library can't be used:
  * "Squiggles are disabled for this translation unit"
  * NULL as been defined manually to be used.
 */
@@ -26,5 +27,12 @@ typedef struct specifier
 /* Prototype: */
 int _putchar(char c);
 int _printf(const char *format, ...);
+
+/* Prototype for _printf function: */
+int format_char(va_list args); /* print the char format */
+int format_string(va_list args); /* print the string format */
+int format_percent(va_list args); /* print the percent */
+int format_int(va_list args); /* print the int format */
+int conv_int_to_str(); /* convert int to string */
 
 #endif
