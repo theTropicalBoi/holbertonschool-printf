@@ -13,9 +13,7 @@ int _printf(const char *format, ...)
 	va_list arg_list;
 
 	if (!format)
-	{
 		return (-1);
-	}
 
 	va_start(arg_list, format);
 
@@ -53,14 +51,13 @@ int _printf(const char *format, ...)
 			{
 				count_index = count_index + format_int(arg_list);
 			}
-
-		} else /* If [i] is not % write the char and incrmenent */
+		}
+		else /* If [i] is not % write the char and incrmenent */
 		{
 			write(1, &format[i], 1);
 			count_index++;
 		}
 	}
-
 	va_end(arg_list);
 	return (count_index);
 }
