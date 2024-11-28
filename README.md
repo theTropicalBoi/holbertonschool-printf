@@ -35,7 +35,7 @@ Hello World!
 user@ubuntu: 
 ```
 
-## Man page:
+## Man Page:
 
 
 ## Testing:
