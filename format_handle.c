@@ -41,7 +41,7 @@ int format_string(va_list arg_list)
 int format_percent(va_list arg_list)
 {
 	(void)arg_list;
-    return (write(1, "%", 1));
+	return (write(1, "%", 1));
 }
 
 /**
@@ -57,6 +57,12 @@ int format_int(va_list arg_list)
 	int i = 0;
 	int is_negative = 0;
 	
+	if (num == 0)
+	{
+		write(1, "0", 1);
+		return (1);
+	}
+
 	if (num < 0)
 	{
 		is_negative = 1;
