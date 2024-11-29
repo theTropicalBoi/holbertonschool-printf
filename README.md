@@ -35,14 +35,11 @@ Hello World!
 user@ubuntu: 
 ```
 
-## Man Page:
-
-
 ## Testing:
 
 
 ## Flowchart:
-
+![flowchart](Flowchart.png)
 
 ### Author:
 - [Shaan Somarchand](https://github.com/theTropicalBoi)
