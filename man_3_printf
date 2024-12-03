@@ -1,0 +1,40 @@
+.TH _PRINTF 3 "November 2024" "Version 1.0" "User Commands"
+.SH NAME
+_printf \- Print to the standard output according to a format.
+.SH SYNOPSIS
+.B #include "main.h"
+.PP
+.B int _printf(const char *format, ...);
+.SH DESCRIPTION
+The \fB_printf\fR function produces output according to a format string. The function writes the output to stdout (the standard output).
+.PP
+.SH CONVERSION SPECIFIERS
+The character % is a conversion specifier. The conversion specifiers and their use are:
+.TP
+.B %c
+Print a single character.
+.TP
+.B %s
+Print a string of characters.
+.TP
+.B %d, %i
+Print a decimal (base 10) number.
+.TP
+.B %%
+Print a literal percent sign.
+.SH RETURN VALUE
+The function returns the number of characters printed (excluding the null byte used to end output to strings).
+If fail the function return -1.
+.SH EXAMPLES
+.nf
+_printf("Character:[%c]\\n", 'H');
+_printf("String:[%s]\\n", "I am a string !");
+_printf("Percent:[%%]\\n");
+_printf("Negative:[%d]\\n", -762534);
+.fi
+.SH BUGS
+No known bugs.
+.SH AUTHORS
+Shaan Somarchand
+.SH SEE ALSO
+.BR printf(3)
